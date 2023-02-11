@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Michael and Josefine's Wedding</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Michael and Josefine's Wedding</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#details">Details</a></li>
+          <li><a href="#rsvp">RSVP</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="about">
+        <h2>About the Wedding</h2>
+        <p>Michael and Josefine are excited to announce their wedding on June 17, 2023 in Ekerö, Sweden.</p>
+      </section>
+      <section id="details">
+        <h2>Wedding Details</h2>
+        <ul>
+          <li>Date: June 17, 2023</li>
+          <li>Location: Ekerö, Sweden</li>
+          <li>Ceremony: 3:00 PM</li>
+          <li>Reception: 5:00 PM</li>
+        </ul>
+      </section>
+      <section id="rsvp">
+        <h2>RSVP</h2>
+        <p>Please RSVP by May 1, 2023.</p>
+        <form action="submit-rsvp.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name"><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email"><br>
+          <label for="attending">Attending:</label>
+          <input type="radio" id="attending-yes" name="attending" value="yes">
+          <label for="attending-yes">Yes</label>
+          <input type="radio" id="attending-no" name="attending" value="no">
+          <label for="attending-no">No</label><br>
+          <input type="submit" value="Submit">
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Michael and Josefine</p>
+    </footer>
+  </body>
+</html>
